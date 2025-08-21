@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+    z-index: 1000;
+    background-color: #131315;
+
+    &__menu {
+        img.logo {
+            height: 40px;
+        }
+    }
+
+    a.link {
+
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

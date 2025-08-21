@@ -1,0 +1,28 @@
+/* .header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131315;
+    padding: 32px;
+    overflow-x: auto;
+    gap: 20px;
+}
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+.header__menu-text {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    white-space: nowrap;
+    text-align: center;
+
+}
+.link {
+    color: #FFFFFF;
+    margin-left: auto;
+} */
