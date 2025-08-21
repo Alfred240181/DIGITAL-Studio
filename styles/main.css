@@ -1,0 +1,43 @@
+/* .layout {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-image: url(../images/Background.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.layout__Group {
+    max-width: 100%;
+    max-height: 100%;
+}
+.layout__Line{
+    display: flex;
+}
+footer{
+    color: #fff;
+}
+.left-text1 { 
+        text-align: left; 
+        font-size: 30px;
+        position: absolute; top: 720px; left: 340px;
+}
+.left-text2 { 
+        text-align: left; 
+        font-size: 30px;
+        position: absolute; top: 750px; left: 340px;
+}
+.left-text3 { 
+        text-align: left; 
+        font-size: 30px;
+        position: absolute; top: 780px; left: 340px;
+} 
+.right-text { 
+        text-align: right;
+        font-size: 23px;
+        position: absolute; top: 820px; right: 350px;
+} */

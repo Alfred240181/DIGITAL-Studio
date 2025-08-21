@@ -1,0 +1,64 @@
+.container__caps {
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+}
+
+.Line__team {
+    color: white;
+}
+
+.adaptive {
+    background-color: white;
+    height: 200px;
+}
+
+.text__adaptive {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.team-stats {
+    background-image: url(/images/Background.svg);
+    text-align: center;
+    padding: 150px;
+}
+
+.team__stats {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    gap: 450px;
+    color: white;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-evenly;
+
+    .stat {
+        font-size: 32px;
+        text-align: center;
+        color: white;
+
+
+        strong {
+            font-size: 90px;
+            font-weight: normal;
+            color: white;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-row {
+        flex-direction: column;
+        align-items: center;
+
+        .stat {
+            margin-bottom: 20px;
+        }
+    }
+}
