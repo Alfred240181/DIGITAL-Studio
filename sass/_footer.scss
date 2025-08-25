@@ -1,0 +1,57 @@
+.footer {
+  background-color: #131315F2;
+  position: relative;
+  z-index: 2;
+}
+
+.header__logo {
+  z-index: 3;
+  }
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 32px;
+  z-index: 3;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 25px;
+    order: 0;
+  
+    .list-item:first-child {
+      order: 1;
+        }
+    .list-item:2-child{
+      order: 3;
+    }
+        
+    .list-item:3-child {
+      order: 2;
+    }
+  }
+}
+
+.number-phone {
+  z-index: 3;
+}
+
+.footer__confidance {
+  color: $main-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  z-index: 3;
+}
+
+.footer__year {
+  color: $main-color;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  display: block;
+  z-index: 3;
+}
+

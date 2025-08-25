@@ -1,0 +1,113 @@
+.about {
+  background-color: #AE9C9C40;
+  padding: 128px 0 32px 0;
+  position: relative;
+
+  &__inner {
+    position: relative; 
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      gap: 48px;
+
+      @media screen and (max-width: 640px) {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      &-logo {
+        @media screen and (max-width: 640px) {
+          display: none;
+        }
+      }
+
+      &-studio {
+        color: $main-color;
+        font-size: 48px;
+        font-weight: 300;
+        letter-spacing: 7px;
+        white-space: nowrap;
+
+        @media screen and (max-width: 992px) {
+          font-size: 32px;
+          line-height: 37px;
+        }
+
+        @media screen and (max-width: 640px) {
+          order: -1;
+        }
+      }
+    }
+
+    &-line {
+      background-color: $main-color;
+      width: 223px;
+      height: 1px;
+      position: relative;
+    }
+
+    &-subtitle {
+      color: $main-color;
+      display: flex;
+      flex-direction: column;
+      width: 490px;
+      gap: 32px;
+      margin-left: auto;
+
+      @media screen and (max-width: 640px) {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+      }
+
+      &-item {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 35px; 
+        
+        @media screen and (max-width: 768px) {
+          z-index: 1;
+          font-size: 24px;
+        }
+      }
+    }
+
+    &-text {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+
+      @media screen and (max-width: 768px) {
+        z-index: 1;
+        font-size: 18px;
+      }
+    }
+    
+    &-year {
+      color: $main-color;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: right;
+      display: block;
+      line-height: 23px;
+
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    &-shatl {
+      filter: blur(5px);
+      position: absolute;
+      top: 223px;
+      padding-left: 50px;
+    }  
+  }
+}
+
+
