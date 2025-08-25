@@ -1,0 +1,41 @@
+.integration {
+  padding: 137px 0 128px 0;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  .section-header {
+    margin-bottom: 68px;
+    gap: 48px;
+
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+      display: block;
+    }
+  }
+
+  .header-title{
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+      line-height: 26px;
+      white-space: wrap;
+      }
+
+      @media screen and (max-width: 640px) {
+        margin-bottom: 16px;
+      }
+    }
+  
+
+  &__inner-logo {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

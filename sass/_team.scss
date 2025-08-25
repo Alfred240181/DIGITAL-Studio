@@ -1,0 +1,79 @@
+.team {
+  padding: 128px 0;
+
+  &__inner {
+    color: $main-color;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 52px;
+      gap: 48px;
+
+      @media screen and (max-width: 640px) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    &-title {
+      @media screen and (max-width: 640px) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    &-line {
+
+      @media screen and (max-width: 640px) {
+        width: 50%;
+      }
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 640px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 24%;
+
+      @media screen and (max-width: 640px) {
+        width: 49%;
+      }
+    }
+
+    &-number {
+      font-weight: 400;
+      font-size: 104px;
+      line-height: 100px;
+      margin-bottom: 32px;
+      height: 101px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 72px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &-discription {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+
+      @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+.form {
+  padding: 137px 0 128px 0;
+  position: relative;
+  background-color:#00000080;
+
+  &__inner {
+
+    &-feedback {
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+      }
+
+      &-cosmo {
+      right: 0;
+      top: -243px;
+      position: absolute;
+      z-index: 0;
+
+      @media screen and (max-width: 768px) {
+        top: -150px;
+      }
+
+      @media screen and (max-width: 480px) {
+        top: -140px;
+      }
+      }
+
+    .section-header {
+      z-index: 2;
+      position: relative;
+      gap: 32px;
+
+      @media screen and (max-width: 640px) {
+        flex-direction: column;
+        display: block;
+        }
+      }
+
+      .header-title {
+        @media screen and (max-width: 768px) {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 32px;
+          text-align: center;
+        }
+      }
+
+    &-profile {
+      z-index: 2;
+      position: relative;
+
+      .form__input {
+        margin-bottom: 32px;
+
+        .form__input-description {
+          gap: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          @media screen and (max-width:768px) {
+            flex-direction: column;
+          }
+
+
+          .form__input-text, .form__input-tel {
+            height: 80px;
+            border: none;
+            background: transparent;
+            width: 48%;
+            border-bottom: 4px solid $main-color;
+
+            @media screen and (max-width:768px) {
+              align-items: center;
+              width: 100%;
+            }
+          }
+
+          ::placeholder {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: $main-color;
+            top: 16px;
+          }
+        }
+      }
+
+      .form__inner-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+
+        .form__input-agree {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 23px;
+          display: flex;
+          align-items: center;
+
+          @media screen and (max-width: 768px) {
+            font-size: 18px;
+            line-height: 21px;
+          }
+        }
+
+        .form__input-agreement {
+          min-width: 24px;
+          min-height: 24px;
+          margin-right: 16px;
+        }
+      }
+
+      .form__inner-call {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .form__inner-bottom {
+          width: 594px;
+          height: 48px;
+          color: $main-color;
+          background-color: #7758B7;
+          font-size: 20px;
+          line-height: 23px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
